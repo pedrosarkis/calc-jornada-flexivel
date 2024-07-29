@@ -6,7 +6,7 @@ export const addHours = (time, hoursToAdd) => {
   if (!time) return '';
   const totalMinutes = timeToMinutes(time) + hoursToAdd * 60;
   return minutesToTime(totalMinutes % (24 * 60));
-};
+}
 
 export const calculateDuration = (start, end) => {
   if (!start || !end) return '00:00';
