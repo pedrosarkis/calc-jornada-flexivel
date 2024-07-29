@@ -1,4 +1,3 @@
-// utils/time.js
 export const minutesToTime = (minutes) => `${Math.floor(minutes / 60).toString().padStart(2, '0')}:${(minutes % 60).toString().padStart(2, '0')}`;
 
 export const timeToMinutes = (time) => time ? time.split(':').reduce((acc, curr, i) => acc + parseInt(curr) * (i === 0 ? 60 : 1), 0) : 0;
