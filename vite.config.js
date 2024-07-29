@@ -5,5 +5,6 @@ export default defineConfig({
   plugins: [sveltekit()],
   build: {
     outDir: 'build'
-  }
+  },
+  base: '/flexible-shift-calc/',
 });
