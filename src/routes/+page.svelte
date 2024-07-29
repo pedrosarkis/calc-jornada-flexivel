@@ -1,8 +1,9 @@
 <script>
-    import { onMount } from 'svelte';  
     
     import { addHours, calculateDuration, timeToMinutes, minutesToTime } from '../utils/time';
     import dictionary from '../utils/keyToHTMLValue';
+     // import css
+    import '../tailwind.css';
   
     let start1 = '08:00';
     let end1 = '';
@@ -118,10 +119,3 @@
     </div>
   </main>
   
-  <style>
-  
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
-  
-  </style>

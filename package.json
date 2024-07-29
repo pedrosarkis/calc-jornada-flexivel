@@ -6,9 +6,10 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"predeploy": "npm run build",
+		"testpostcss": "npx postcss --version",
 		"preview": "vite preview",
 		"deploy": "gh-pages -d build",
-		"postbuild": "postcss src/tailwind.css -o public/build/tailwind.css",
+		"postbuild": "npx tailwindcss -i ./src/tailwind.css -o ./public/build/tailwind.css",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
 	},
